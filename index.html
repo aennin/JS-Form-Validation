@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Form</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Browser Form</h1>
+    <form id="browser-form" novalidate>
+       <div class="form-group">
+        <label for="name">Full name</label>
+        <input type="text" id="name" placeholder="Please enter your full name" required>
+        <span class="error-message" id="name-error"></span>
+       </div>
+
+        <div class="form-group">
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" placeholder="Please enter your email" required>
+          <span class="error-message" id="email-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="country">Country:</label>
+          <select id="country" required>
+            <option value="" disabled selected>Select a country</option> 
+            <option value="ch">Switzerland</option>
+            <option value="fr">France</option>
+            <option value="de">Germany</option>
+            <option value="nl">The Netherlands</option>
+            <option value="it">Italy</option>
+          </select>
+          <span class="error-message" id="country-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="postal-code">Postal Code</label>
+          <input type="text" id="postal-code" placeholder="Please enter the postal code" required>
+          <span class="error-message" id="postal-code-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" placeholder="Enter password" minlength="6" required>
+          <span class="error-message" id="password-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="repeat-password">Re-Enter your password</label>
+          <input type="password" id="repeat-password" placeholder="Repeat password" minlength="6" required>
+          <span class="error-message" id="repeat-password-error"></span>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="submit">
+        </div>
+    </form>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
